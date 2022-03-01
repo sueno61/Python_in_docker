@@ -1,0 +1,20 @@
+version: '3'
+services:
+  python_env:
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: ubuntu-python38
+    container_name: python-opencv
+    volumes:
+      - ./Projects:/work
+      - /Users/sueno/.Xauthority:/root/.Xauthority
+      # - ${HOME}/.Xauthority:/root/.Xauthority
+
+    ports:
+      - '8888:8888'
+    environment:
+      # - 'DISPLAY=${hostname}:0'
+      # - 'DISPLAY=localhost:0.0'
+    working_dir: /work
+    command: jupyter lab --ip=0.0.0.0 --allow-root --LabApp.token=''

@@ -1,0 +1,5 @@
+jupyterlab
+
+opencv-python
+opencv-contrib-python
+pyocr

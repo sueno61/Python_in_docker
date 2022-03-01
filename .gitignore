@@ -1,0 +1,9 @@
+.venv/
+venv/
+.DS_Store
+.python-version
+.ipynb_checkpoints/
+__pycache__/
+
+*.db-journal
+.vscode/
