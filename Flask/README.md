@@ -6,5 +6,5 @@ $ export FLASK_ENV=development
 $ flask run
 
 # caution
-
-use vscode attach, not docker exec.
+VScodeでattachして、起動すること。  
+docker exec で接続しても動作しない（アクセスできない）   
