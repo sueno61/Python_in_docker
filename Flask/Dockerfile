@@ -12,4 +12,4 @@ ENV FLASK_ENV=development
 ENV FLASK_APP=app
 
 # CMD flask run
-CMD bash
+# CMD bash
