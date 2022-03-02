@@ -4,5 +4,5 @@
 $ streamlit run main.py
 
 ### 注記
-docker exec で接続後、実行しても正常に動作する。 ※FlaskではNG 
+docker exec で接続後、実行しても正常に動作する。 ※FlaskではNG　 
 vscode で attach しても可能。  
