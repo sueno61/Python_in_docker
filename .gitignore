@@ -1,5 +1,5 @@
-.venv/
-venv/
+.venv
+venv*
 .DS_Store
 .python-version
 .ipynb_checkpoints/

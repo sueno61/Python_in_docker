@@ -1,35 +1,33 @@
 # Dockerfile内でのセッティング
 
 ### ENV FLASK_RUN_PORT=5001
+(macOS Monterey のAirPlayとのコンフリクト回避)     
 ```
-$ export FLASK_RUN_PORT=5001  
+export FLASK_RUN_PORT=5001  
+```
 
-　　　(macOS Monterey のAirPlayとのコンフリクト回避)     
-```
 ### ENV FLASK_ENV=development
+(デバックモードに設定)   
 ```
-　→　$ export FLASK_ENV=development  
-　　　(デバックモードに設定)   
+export FLASK_ENV=development  
 ```
+
 ### ENV FLASK_APP=app
+(起動アプリ：app.py)    
 ```
-　→　$ export FLASK_APP=app   
-　　　(起動アプリ：app.py)    
+export FLASK_APP=app   
 ```
 ### 起動コマンド（コメントアウト）
 ```
-$ flask run --host=0.0.0.0
+flask run --host=0.0.0.0
 ```
  
 
 # 
-### 起動コマンドのオプションについて
+## 起動コマンドのオプションとアクセス方法
 
-```
-$ flask run --host=0.0.0.0
-```
-- localhost:5001 にアクセスする。   
-※127.0.0.1 では、ダンマリ。   
+### localhost:5001 にアクセスする。
+※ "127.0.0.1:5001" では「ダンマリ」になる   
 
 ### ＜備考＞
 - VScodeでattachの場合、   
