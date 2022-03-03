@@ -26,3 +26,5 @@ jupyterlab
 #nest-asyncio
 
 opencv-python
+
+pyqt5

@@ -33,5 +33,8 @@ RUN pip install --upgrade pip setuptools
 COPY requirements.txt ${PWD}
 RUN pip install -r requirements.txt  && rm -rf /root/.cache/*
 
+
+# RUN apt-get update && apt-get install libxcb-xinerama0
+
 # execute jupyterlab as a default command
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--LabApp.token=''"]
