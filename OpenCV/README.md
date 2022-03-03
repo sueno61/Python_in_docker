@@ -18,11 +18,11 @@ docker build -t python-opencv .
 
 jupyter lab 起動
 ```
-docker run -d -v /Users/sueno/OpenCV/Projects:/work -v ~/.Xauthority:/root/.Xauthority -e DISPLAY=$(hostname):0 -p 8888:8888 --name python-opencv python-opencv
+docker run -d -v $PWD/Projects:/work -v ~/.Xauthority:/root/.Xauthority -e DISPLAY=$(hostname):0 -p 8888:8888 --name python-opencv python-opencv
 ```
-コマンドプロンプトを起動し、コマンドラインからテストする場合
+コマンドプロンプトを起動し、コマンドラインからテストする場合 （使用後、削除）
 ```
-docker run -it -v /Users/sueno/OpenCV/Projects:/work -v ~/.Xauthority:/root/.Xauthority -e DISPLAY=$(hostname):0 -p 8888:8888 --name python-opencv python-opencv bash
+docker run --rm -it -v $PWD/Projects:/work -v ~/.Xauthority:/root/.Xauthority -e DISPLAY=$(hostname):0 -p 8888:8888 python-opencv bash
 ```
 
 ## ubuntu 
