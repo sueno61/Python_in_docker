@@ -1,38 +1,42 @@
-# cv2.imshow()のために for macOS
-## mac
+# macOS for imgshow()
+
 - XQuartz インストール
 - xhost オープン（開放）
 ```
 xhost + 
 ```
 
-## イメージ作成
+# イメージ作成 (docker build)
 ```
 docker build -t python-opencv .
 ```
-## コンテナ実行（docker run）
+# コンテナ作成 (docker run)
+## macOS
 
 - .Xauthority のマウント
 - 環境変数　DISPLAYの設定
 
-<サンプル>
+jupyter lab 起動
 ```
-docker run -d -v /Users/sueno/OpenCV/Projects:/work -v /Users/sueno/.Xauthority:/root/.Xauthority -e DISPLAY=$(hostname):0 -p 8888:8888 --name python-opencv ubuntu-python38
+docker run -d -v /Users/sueno/OpenCV/Projects:/work -v ~/.Xauthority:/root/.Xauthority -e DISPLAY=$(hostname):0 -p 8888:8888 --name python-opencv python-opencv
 ```
 コマンドプロンプトを起動し、コマンドラインからテストする場合
 ```
-docker run -it -v /Users/sueno/OpenCV/Projects:/work -v /Users/sueno/.Xauthority:/root/.Xauthority -e DISPLAY=$(hostname):0 -p 8888:8888 --name python-opencv ubuntu-python38 bash
+docker run -it -v /Users/sueno/OpenCV/Projects:/work -v ~/.Xauthority:/root/.Xauthority -e DISPLAY=$(hostname):0 -p 8888:8888 --name python-opencv python-opencv bash
 ```
 
-# ubuntu での docker run ※未完（＾＾；
+## ubuntu 
+
+```
+docker run -d -v $PWD/Projects:/work -v /tmp/.X11-unix:/tmp/.X11-unix:rw  -e DISPLAY=:0 -e QT_X11_NO_MITSHM=1 -p 8888:8888 --name python-opencv python-opencv
+```
+
+# 調べたトラブル対策 (主にubuntu)
 - library不足 ？  
 pyqt5
 - python package 不足？  
 　a案) python-pyqt5 / pyqt5-dev-tools / qttools5-dev-tools  
 　b案) libxcb-xinerama0
-```
-docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix:rw  -v $PWD/Projects:/work -e DISPLAY=$(hostname):0 -e QT_X11_NO_MITSHM=1 -p 8888:8888 --name python-opencv ubuntu-python38 bash
-```
 以下、参考
 ```
 docker run -it \
