@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: python38_ocr
     container_name: python_ocr
     working_dir: '/Projects'
     tty: true
