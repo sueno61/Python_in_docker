@@ -1,0 +1,9 @@
+notebook
+jupyterlab
+
+pandas
+pytz
+
+selenium
+bs4
+oauth2client
