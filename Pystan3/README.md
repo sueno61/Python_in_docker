@@ -1,7 +1,6 @@
-# データサイエンス（統計解析）　<Python3.9 jupyterlab>
+# データサイエンス : Python3.9 with jupyterlab Pystan
 
-・Pystan3.1.1でgcc9が必要なため、  
-　ubuntu20.04にpython3.9.8をビルド  
+・Pystan3.1.1でgcc9が必要なため、ubuntu20.04にpython3.9.8をビルド  
 
 ## 日本語対応
 - apt-get install fonts-ipaexfont  
