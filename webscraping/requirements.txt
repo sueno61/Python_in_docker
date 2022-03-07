@@ -2,10 +2,11 @@ notebook
 jupyterlab
 
 pandas
-
 pytz
 Pillow
 
-selenium
+requests
 bs4
+selenium
+
 oauth2client
