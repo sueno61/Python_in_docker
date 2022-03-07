@@ -2,7 +2,9 @@ notebook
 jupyterlab
 
 pandas
+
 pytz
+Pillow
 
 selenium
 bs4
