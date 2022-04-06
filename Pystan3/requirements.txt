@@ -24,3 +24,5 @@ cython
 pystan
 arviz
 nest-asyncio
+
+ipywidgets

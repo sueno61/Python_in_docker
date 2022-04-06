@@ -17,11 +17,11 @@ RUN apt-get clean && apt clean && rm -rf /var/lib/apt/lists/*
 
 ## install python3.9
 WORKDIR /tmp
-RUN wget https://www.python.org/ftp/python/3.9.8/Python-3.9.8.tar.xz \
-&& tar xJf Python-3.9.8.tar.xz \
-&& rm -f Python-3.9.8.tar.xz
+RUN wget https://www.python.org/ftp/python/3.9.12/Python-3.9.12.tar.xz \
+&& tar xJf Python-3.9.12.tar.xz \
+&& rm -f Python-3.9.12.tar.xz
 
-WORKDIR /tmp/Python-3.9.8
+WORKDIR /tmp/Python-3.9.12
 RUN ./configure && make && make install
 
 WORKDIR /usr/local/bin
