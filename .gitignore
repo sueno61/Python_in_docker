@@ -1,0 +1,15 @@
+#.DS_Store
+
+venv*
+.venv
+.python-version
+
+# Python: byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+.ipynb_checkpoints/
+
+*.db-journal
+build/

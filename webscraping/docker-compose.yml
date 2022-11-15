@@ -1,0 +1,21 @@
+version: '3'
+services:
+  webscr:
+    # restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: python39-webscrap
+    container_name: webscrap_env
+    working_dir: /work
+    tty: true
+    volumes:
+      - ./Projects:/work
+
+    ports:
+      - '8888:8888'
+      - '5900:5900'
+      - '4444:4444'
+      - '80:80'
+  
+    command: jupyter lab --ip=0.0.0.0 --allow-root --LabApp.token=''

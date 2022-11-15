@@ -1,0 +1,12 @@
+notebook
+jupyterlab
+
+pandas
+pytz
+Pillow
+
+requests
+bs4
+selenium
+
+oauth2client

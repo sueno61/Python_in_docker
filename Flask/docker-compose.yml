@@ -1,0 +1,19 @@
+version: '3'
+services:
+  flask:
+    # restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: flask_img
+    container_name: flask_env
+    working_dir: /site
+    tty: true
+    volumes:
+      - ./site:/site
+
+    ports: 
+      - 5001:5001
+
+    # command: flask run
+    # command: bash

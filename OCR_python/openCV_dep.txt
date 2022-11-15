@@ -1,0 +1,23 @@
+libjasper-dev
+libqt4-dev
+libhdf5-dev
+libhdf5-serial-dev
+libhdf5-103
+libqtgui4
+libqtwebkit4
+libqt4-test
+python3-pyqt5
+libatlas-base-dev
+libjasper-dev
+
+or
+libopencv-dev
+
+
+# 依存パッケージをインストールする
+apt-get -y install build-essential checkinstall cmake unzip pkg-config yasm
+apt-get -y install git gfortran python3-dev
+apt-get -y install libjpeg8-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine2-dev libv4l-dev
+apt-get -y install libjpeg-dev libpng-dev libtiff-dev libtbb-dev
+apt-get -y install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libatlas-base-dev libxvidcore-dev libx264-dev libgtk-3-dev
+

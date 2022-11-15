@@ -1,0 +1,7 @@
+pytz
+
+flask
+flask_sqlalchemy
+flask_login
+Werkzeug
+flask-bootstrap

@@ -1,0 +1,3 @@
+docker run -d -v /Users/sueno/OpenCV/Projects:/work -v /Users/sueno/.Xauthority
+:/root/.Xauthority -e DISPLAY=$(hostname):0 -p 8888:8888 --name opencv ubuntu-pyth
+on38 

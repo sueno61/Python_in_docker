@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>サンプルHTML</h1>
+    <h2>Hello, Japan!</h2>
+    <ul>
+        {% for bt in bullets %}
+        {% if loop.index % 3 != 0 %}
+        <li>{{ bt }}</li>
+        {% endif %}
+
+        {% endfor %}
+
+    </ul>
+
+</body>
+
+</html>
